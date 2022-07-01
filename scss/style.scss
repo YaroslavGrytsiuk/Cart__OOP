@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.catalog {
+
+    &__container {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    &__body {
+        display: grid;
+        grid-gap: 4px;
+        grid-template-columns: 25% auto;
+        background-color: aliceblue;
+        padding: 4px;
+    }
+
+    // &__filter {}
+
+    &__cards {
+        width: 100%;
+        display: grid;
+        grid-gap: 4px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__card {
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+}
+
+.card {
+
+    &__product-id {
+        align-self: flex-end;
+        font-size: 14px;
+        color: rgb(161, 159, 159);
+        font-weight: 300;
+    }
+
+    &__img {
+        align-self: center;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        margin: 5px 0;
+    }
+
+    &__price {
+        margin-bottom: 5px;
+    }
+
+    &__button {
+        max-width: fit-content;
+        padding: 5px 25px;
+        cursor: pointer;
+    }
+}
+
+.button-show-more {
+    background: #ffbf26;
+    color: #222d4a;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 52px;
+    padding: 0 32px;
+    transition: .3s ease;
+    cursor: pointer;
+    margin-left: auto;
+
+    .but-img {
+        margin-right: 10px;
+    }
+}
