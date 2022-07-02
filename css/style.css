@@ -1,6 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
+  max-height: 100vh;
+}
+
+.hide {
+  display: none;
 }
 
 .catalog__container {
@@ -42,6 +47,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 100%;
+  min-height: 350px;
 }
 
 .card__product-id {
@@ -66,6 +72,12 @@ body {
 
 .card__title {
   margin: 5px 0;
+  max-height: 55px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .card__price {
@@ -81,7 +93,7 @@ body {
 }
 
 .button-show-more {
-  background: #ffbf26;
+  background: #a2dff9;
   color: #222d4a;
   height: 42px;
   display: -webkit-box;
@@ -92,12 +104,12 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border-radius: 52px;
+  border-radius: 5px;
   padding: 0 32px;
   -webkit-transition: .3s ease;
   transition: .3s ease;
   cursor: pointer;
-  margin-left: auto;
+  margin: 10px 0 0 auto;
 }
 
 .button-show-more .but-img {
