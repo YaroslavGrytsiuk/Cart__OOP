@@ -1,6 +1,6 @@
 class Card {
     constructor(item) {
-        this.productId = item.productId
+        this.productId = key
         this.img = item.img
         this.title = item.title
         this.price = item.price
@@ -24,7 +24,8 @@ class Card {
         price.classList.add('card__price')
         price.innerHTML = `Ціна:<span> ${this.price + ' грн'}</span>`
         const buttton = document.createElement('button')
-        buttton.classList.add('card__button')
+        buttton.classList.add('card__button', 'to-cart')
+        buttton.setAttribute('data-product-id', this.productId)
         buttton.innerText = 'Купити'
         card.append(productId, imageContainer, title, price, buttton)
         return card

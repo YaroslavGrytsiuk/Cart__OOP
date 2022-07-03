@@ -1,119 +1,107 @@
-[
-    {
-        "brand": "SAMSUNG",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026251,
-        "img": "https://img.moyo.ua/img/products/4975/32_174.jpg?1656677627",
-        "price": 13999,
-        "title": "Смарт-годинник Samsung Galaxy Watch4 Classic 46mm eSim Black (SM-R895FZKASEK)",
-        "productId": 497532
-    },
-    {
-        "brand": "SAMSUNG",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026252,
-        "img": "https://img.moyo.ua/img/products/4975/31_174.jpg?1656677627",
-        "price": 12999,
-        "title": "Смарт-годинник Samsung Galaxy Watch4 Classic 46mm Silver (SM-R890NZSASEK)",
-        "productId": 497531
-    },
-    {
+{
+    "498942": {
         "brand": "Apple",
         "category": "Smart Watch (Розумний годинник)",
-        "id": 9026250,
-        "img": "https://img.moyo.ua/img/products/4301/70_174.jpg?1656677627",
-        "price": 9499,
-        "title": "Смарт-годинник Apple Watch Series 3 GPS 42mm Space Grey Aluminium Case with Black Sport Band (MTF32FS/A)",
-        "productId": 430170
-    },
-    {
-        "brand": "2E",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026249,
-        "img": "https://img.moyo.ua/img/products/5035/96_174.jpg?1656677596",
-        "price": 1849,
-        "title": "Смарт-годинник 2E Alpha X 46 mm Black-Silver",
-        "productId": 503596
-    },
-    {
-        "brand": "GOGPS ME",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026370,
-        "img": "https://img.moyo.ua/img/products/5124/24_174.jpg?1656677661",
-        "price": 2170,
-        "title": "Дитячий телефон-годинник з GPS трекером GOGPS ME K27 Чорний",
-        "productId": 512424
-    },
-    {
-        "brand": "Huawei",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026358,
-        "img": "https://img.moyo.ua/img/products/5050/78_174.jpg?1656677611",
-        "price": 7999,
-        "title": "Смарт-годинник Huawei Watch GT3 42mm Elegant Gold",
-        "productId": 505078
-    },
-    {
-        "brand": "Apple",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026511,
-        "img": "https://img.moyo.ua/img/products/4989/42_174.jpg?1656677627",
+        "img": "https://img.moyo.ua/img/products/4989/42_174.jpg?1656837568",
         "price": 17299,
-        "title": "Смарт-годинник Apple Watch Series 7 Starlight 41mm Starlight Band",
-        "productId": 498942
+        "title": "Смарт-годинник Apple Watch Series 7 Starlight 41mm Starlight Band"
     },
-    {
-        "brand": "2E",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026519,
-        "img": "https://img.moyo.ua/img/products/5036/10_174.jpg?1656677596",
-        "price": 1849,
-        "title": "Смарт-годинник 2E Alpha X 46 mm Silver",
-        "productId": 503610
-    },
-    {
-        "brand": "Xiaomi",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026510,
-        "img": "https://img.moyo.ua/img/products/5036/10_174.jpg?1656677596",
-        "price": 1999,
-        "title": "Смарт-годинник Xiaomi Redmi Watch 2 Lite Ivory",
-        "productId": 1969621
-    },
-    {
-        "brand": "Apple",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026510,
-        "img": "https://img.moyo.ua/img/products/4989/46_174.jpg?1656677721",
-        "price": 18299,
-        "title": "Смарт-годинник Apple Watch Series 7 Blue 45mm Abyss Blue Band",
-        "productId": 498946
-    },
-    {
-        "brand": "GOGPS ME",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9027074,
-        "img": "https://img.moyo.ua/img/products/5124/24_174.jpg?1656677661",
-        "price": 2170,
-        "title": "Дитячий телефон-годинник з GPS трекером GOGPS ME K27 Чорний",
-        "productId": 512424
-    },
-    {
-        "brand": "GOGPS ME",
-        "category": "Smart Watch (Розумний годинник)",
-        "id": 9026510,
-        "img": "https://img.moyo.ua/img/products/4989/46_174.jpg?1656677721",
-        "price": 1499,
-        "title": "Смарт-годинник Apple Watch Series 7 Blue 45mm Abyss Blue Band",
-        "productId": 498946
-    },
-    {
+    "496230": {
         "brand": "Huawei",
         "category": "Smart Watch (Розумний годинник)",
-        "id": 9027236,
-        "img": "https://img.moyo.ua/img/products/4916/31_174.jpg?1656677627",
+        "img": "https://img.moyo.ua/img/products/4962/30_174.jpg?1656837539",
+        "price": 12999,
+        "title": "Смарт-годинник Huawei Watch 3 Black"
+    },
+    "430170": {
+        "brand": "Apple",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/4301/70_174.jpg?1656837539",
+        "price": 9499,
+        "title": "Смарт-годинник Apple Watch Series 3 GPS 42mm Space Grey Aluminium Case with Black Sport Band (MTF32FS/A)"
+    },
+    "497523": {
+        "brand": "SAMSUNG",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/4975/23_174.jpg?1656837560",
+        "price": 9399,
+        "title": "Смарт-годинник Samsung Galaxy Watch4 44mm Black (SM-R870NZKASEK)"
+    },
+    "497524": {
+        "brand": "SAMSUNG",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/4975/24_174.jpg?1656837560",
+        "price": 9299,
+        "title": "Смарт-годинник Samsung Galaxy Watch4 44mm Silver (SM-R870NZSASEK)"
+    },
+    "497525": {
+        "brand": "SAMSUNG",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/4975/25_174.jpg?1656837560",
+        "price": 9199,
+        "title": "Смарт-годинник Samsung Galaxy Watch4 44mm Green (SM-R870NZGASEK)"
+    },
+    "497526": {
+        "brand": "SAMSUNG",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/4975/26_174.jpg?1656837560",
+        "price": 7799,
+        "title": "Смарт-годинник Samsung Galaxy Watch4 40mm Black (SM-R860NZKASEK)"
+    },
+    "497527": {
+        "brand": "SAMSUNG",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/4975/27_174.jpg?1656837560",
+        "price": 7799,
+        "title": "Смарт-годинник Samsung Galaxy Watch4 40mm Silver (SM-R860NZSASEK)"
+    },
+    "497528": {
+        "brand": "SAMSUNG",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/4975/28_174.jpg?1656837560",
+        "price": 7799,
+        "title": "Смарт-годинник Samsung Galaxy Watch4 40mm Gold (SM-R860NZDASEK)"
+    },
+    "503596": {
+        "brand": "2E",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/5035/96_174.jpg?1656837529",
+        "price": 1849,
+        "title": "Смарт-годинник 2E Alpha X 46 mm Black-Silver"
+    },
+    "503599": {
+        "brand": "2E",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/5035/99_174.jpg?1656837590",
+        "price": 1729,
+        "title": "Смарт-годинник 2E Motion GT 46 mm Black-Silver"
+    },
+    "491631": {
+        "brand": "Huawei",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/4916/31_174.jpg?1656837539",
         "price": 1649,
-        "title": "Смарт-годинник Huawei Band 6 Sakura Pink",
-        "productId": 498946
+        "title": "Смарт-годинник Huawei Band 6 Sakura Pink"
+    },
+    "491632": {
+        "brand": "Huawei",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/4916/32_174.jpg?1656837539",
+        "price": 1649,
+        "title": "Смарт-годинник Huawei Band 6 Amber Sunrise"
+    },
+    "503607": {
+        "brand": "2E",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/5036/7_174.jpg?1656837529",
+        "price": 1249,
+        "title": "Смарт-годинник 2E Wave SE 40 mm Black"
+    },
+    "503608": {
+        "brand": "2E",
+        "category": "Smart Watch (Розумний годинник)",
+        "img": "https://img.moyo.ua/img/products/5036/10_174.jpg?1656837529",
+        "price": 1349,
+        "title": "Смарт-годинник 2E Wave SE 40 mm Silver"
     }
-]
+}
