@@ -10,6 +10,7 @@
     let cardsKeys = Object.keys(productCards)
 
     renderCards()
+    showMoreButton.addEventListener('click', showMoreCards)
 
     function renderCards() {
         for (key in productCards) {
@@ -27,7 +28,6 @@
             cardsAmount.textContent = ''
             document.querySelector('.but-text').textContent = 'Більше немає'
         }
-
     }
 
     function showMoreCards() {
@@ -40,29 +40,18 @@
         }
     }
 
-    showMoreButton.addEventListener('click', showMoreCards)
     catalogGards.addEventListener('click', e => {
         if (e.target.classList.contains('to-cart')) {
-            let productId = e.target.dataset['productId']
-            for (item of productCards) {
-                console.log(cartData[productId])
-                if (cartData[productId] !== undefined) {
-                    cartData[productId]['count']++
-                    return
-                } else {
-                    cartData[productId] = item
-                    cartData[productId]['count'] = 1
-                }
+            let articul = e.target.dataset['productId'];
+            if (cartData[articul] !== undefined) {
+                cartData[articul]['count']++;
             }
+            else {
+                cartData[articul] = productCards[articul];
+                cartData[articul]['count'] = 1;
+            }
+            localStorage.setItem('cartData', JSON.stringify(cartData));
         }
-        console.log(cartData)
     })
 
 })()
-// if (data[articul] !== undefined) {
-//     data[articul]['count']++;
-// }
-// else {
-//     data[articul] = cart[articul];
-//     data[articul]['count'] = 1;
-// }
