@@ -1,16 +1,16 @@
 class Card {
-    constructor(item) {
-        this.productId = key
-        this.img = item.img
-        this.title = item.title
-        this.price = item.price
+    constructor(option) {
+        this.id = option.id
+        this.img = option.img
+        this.title = option.title
+        this.price = option.price
     }
     renderCard() {
         const card = document.createElement('div')
         card.classList.add('catalog__card', 'card')
         const productId = document.createElement('div')
         productId.classList.add('card__product-id')
-        productId.innerText = this.productId
+        productId.innerText = this.id
         const imageContainer = document.createElement('div')
         imageContainer.classList.add('card__img')
         const img = document.createElement('img')
@@ -25,7 +25,7 @@ class Card {
         price.innerHTML = `Ціна:<span> ${this.price + ' грн'}</span>`
         const buttton = document.createElement('button')
         buttton.classList.add('card__button', 'to-cart')
-        buttton.setAttribute('data-product-id', this.productId)
+        buttton.setAttribute('data-product-id', this.id)
         buttton.innerText = 'Купити'
         card.append(productId, imageContainer, title, price, buttton)
         return card

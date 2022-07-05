@@ -1,11 +1,16 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  max-height: 100vh;
+  height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .catalog__container {
-  max-width: 90%;
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -19,6 +24,13 @@ body {
   padding: 4px;
 }
 
+@media (max-width: 534px) {
+  .catalog__body {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .catalog__cards {
   width: 100%;
   display: -ms-grid;
@@ -26,6 +38,20 @@ body {
   grid-gap: 4px;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 880px) {
+  .catalog__cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .catalog__cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .catalog__card {
@@ -101,8 +127,78 @@ body {
   padding: 0 32px;
   cursor: pointer;
   margin: 10px 0 0 auto;
+  margin-bottom: 40px;
 }
 
 .button-show-more .but-img {
   margin-right: 10px;
+}
+
+.cart__body {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: aliceblue;
+}
+
+.cart__row {
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  margin: 5px auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart__del-btn {
+  margin-right: 10px;
+}
+
+.cart__img {
+  padding: 0 10px;
+}
+
+.cart__img img {
+  max-height: 80px;
+}
+
+.cart__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 10px;
+  max-width: 640px;
+}
+
+.cart__amount {
+  min-width: 40px;
+  text-align: center;
+}
+
+.cart__price {
+  margin: 0 10px;
+}
+
+.cart__total {
+  padding: 10px;
+  width: 900px;
+  text-align: right;
 }
