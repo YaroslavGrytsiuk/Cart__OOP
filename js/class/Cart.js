@@ -30,7 +30,6 @@ class Cart {
     }
 
     renderCart() {
-        const cart = document.getElementById('cart')
         const cartBody = document.createElement('div')
         cartBody.classList.add('cart__body')
         for (const key in this.cartData) {
@@ -64,12 +63,13 @@ class Cart {
             const rowPrice = document.createElement('div')
             rowPrice.classList.add('cart__price')
             rowPrice.textContent = `${product.count * product.price} ${this.currency}`
-            const cartTotal = document.createElement('div')
-            cartTotal.classList.add('cart__total')
-            cartTotal.textContent = `Сума замовлення: ${this.getTotal()} ${this.currency}`
             cartRow.append(btnDel, imgContainer, titleRow, btnMinus, amount, btnPlus, rowPrice)
-            cartBody.append(cartRow, cartTotal)
-            cart.append(cartBody)
+            cartBody.append(cartRow)
         }
+        const cartTotal = document.createElement('div')
+        cartTotal.classList.add('cart__total')
+        cartTotal.textContent = `Сума замовлення: ${this.getTotal()} ${this.currency}`
+        cartBody.append(cartTotal)
+        return cartBody
     }
 }

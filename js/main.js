@@ -61,19 +61,19 @@
                 shopCart.deleteProduct(target.dataset['articul'])
                 cartDomEl.innerHTML = ''
                 cartDomEl.append(shopCart.renderCart())
-                localStorage.setItem('cartData', JSON.stringify(shopCart.cartData))
+                // localStorage.setItem('cartData', JSON.stringify(shopCart.cartData))
             }
             else if (target.classList.contains('cart__min-btn')) {
                 shopCart.minusProduct(target.dataset['articul'])
                 cartDomEl.innerHTML = ''
                 cartDomEl.append(shopCart.renderCart())
-                localStorage.setItem('cartData', JSON.stringify(shopCart.cartData))
+                // localStorage.setItem('cartData', JSON.stringify(shopCart.cartData))
             }
             else if (target.classList.contains('cart__plus-btn')) {
                 shopCart.plusProduct(target.dataset['articul'])
                 cartDomEl.innerHTML = ''
                 cartDomEl.append(shopCart.renderCart())
-                localStorage.setItem('cartData', JSON.stringify(shopCart.cartData))
+                //localStorage.setItem('cartData', JSON.stringify(shopCart.cartData))
             }
         })
     }
