@@ -113,6 +113,7 @@ img {
   max-width: fit-content;
   padding: 5px 25px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .button-show-more {
@@ -134,6 +135,10 @@ img {
   margin-right: 10px;
 }
 
+.modal-body {
+  background-color: aliceblue;
+}
+
 .cart__body {
   margin: auto;
   display: -webkit-box;
@@ -146,7 +151,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: aliceblue;
 }
 
 .cart__row {
@@ -159,17 +163,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 900px;
   margin: 5px auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid #dfdfdf;
 }
 
 .cart__del-btn {
   margin-right: 10px;
+  border-radius: 5px;
+  width: 25px;
+}
+
+.cart__del-btn:hover {
+  background-color: #f7f7f7;
 }
 
 .cart__img {
@@ -185,12 +195,30 @@ img {
       -ms-flex: 1;
           flex: 1;
   margin: 0 10px;
-  max-width: 550px;
+  width: 350px;
+}
+
+.cart__min-btn {
+  border-radius: 5px;
+  width: 25px;
+}
+
+.cart__min-btn:hover {
+  background-color: #f7f7f7;
 }
 
 .cart__amount {
   min-width: 40px;
   text-align: center;
+}
+
+.cart__plus-btn {
+  border-radius: 5px;
+  width: 25px;
+}
+
+.cart__plus-btn:hover {
+  background-color: #f7f7f7;
 }
 
 .cart__price {
@@ -200,6 +228,7 @@ img {
 
 .cart__total {
   padding: 10px;
-  width: 900px;
-  text-align: right;
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: bold;
 }

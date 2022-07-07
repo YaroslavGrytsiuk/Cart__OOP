@@ -24,8 +24,10 @@ class Card {
         price.classList.add('card__price')
         price.innerHTML = `Ціна:<span> ${this.price + ' грн'}</span>`
         const buttton = document.createElement('button')
-        buttton.classList.add('card__button', 'to-cart')
+        buttton.classList.add('card__button', 'to-cart', 'btn-primary', 'btn')
         buttton.setAttribute('data-product-id', this.id)
+        buttton.setAttribute('data-bs-toggle', "modal")
+        buttton.setAttribute('data-bs-target', "#exampleModal")
         buttton.innerText = 'Купити'
         card.append(productId, imageContainer, title, price, buttton)
         return card

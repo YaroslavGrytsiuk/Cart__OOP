@@ -95,6 +95,7 @@ img {
         max-width: fit-content;
         padding: 5px 25px;
         cursor: pointer;
+        border-radius: 5px;
     }
 }
 
@@ -113,6 +114,10 @@ img {
     }
 }
 
+.modal-body {
+    background-color: aliceblue;
+}
+
 .cart {
 
     &__body {
@@ -120,7 +125,6 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: aliceblue;
     }
 
     &__row {
@@ -129,15 +133,22 @@ img {
         flex: 1;
         padding: 5px 25px;
         display: flex;
-        width: 900px;
         margin: 5px auto;
         justify-content: space-around;
         align-items: center;
+        border: 1px solid rgb(223, 223, 223);
 
     }
 
     &__del-btn {
         margin-right: 10px;
+        border-radius: 5px;
+        width: 25px;
+
+        &:hover {
+            background-color: rgb(247, 247, 247);
+        }
+
     }
 
     &__img {
@@ -151,17 +162,31 @@ img {
     &__title {
         flex: 1;
         margin: 0 10px;
-        max-width: 550px;
+        width: 350px;
     }
 
-    &__min-btn {}
+    &__min-btn {
+        border-radius: 5px;
+        width: 25px;
+
+        &:hover {
+            background-color: rgb(247, 247, 247);
+        }
+    }
 
     &__amount {
         min-width: 40px;
         text-align: center;
     }
 
-    &__plus-btn {}
+    &__plus-btn {
+        border-radius: 5px;
+        width: 25px;
+
+        &:hover {
+            background-color: rgb(247, 247, 247);
+        }
+    }
 
     &__price {
         margin: 0 10px;
@@ -170,7 +195,8 @@ img {
 
     &__total {
         padding: 10px;
-        width: 900px;
-        text-align: right;
+        margin-left: auto;
+        font-size: 18px;
+        font-weight: bold;
     }
 }
