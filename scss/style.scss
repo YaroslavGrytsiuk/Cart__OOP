@@ -2,12 +2,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     height: 100vh;
+    padding-top: 30px;
 }
 
 img {
     display: block;
     max-width: 100%;
 }
+
+.cart-button {
+    display: block;
+    margin-left: auto;
+    width: 86px;
+    height: 26px;
+    background: url(https://www.moyo.ua/new-moyo/build/img/icon-cart.svg) no-repeat 50%;
+    background-size: contain;
+}
+
+
 
 
 .catalog {
@@ -118,6 +130,8 @@ img {
     background-color: aliceblue;
 }
 
+
+
 .cart {
 
     &__body {
@@ -195,7 +209,6 @@ img {
 
     &__total {
         padding: 10px;
-        margin-left: auto;
         font-size: 18px;
         font-weight: bold;
     }

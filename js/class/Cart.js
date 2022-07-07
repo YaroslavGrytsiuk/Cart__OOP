@@ -1,30 +1,30 @@
 class Cart {
     constructor(
-        cartData,
+        goods,
         currency = ''
     ) {
-        this.cartData = cartData
+        this.goods = goods
         this.currency = 'грн'
     }
 
     plusProduct(articul) {
-        this.cartData[articul]['count']++
+        this.goods[articul]['count']++
     }
 
     minusProduct(articul) {
-        if (this.cartData[articul]['count'] - 1 == 0) {
+        if (this.goods[articul]['count'] - 1 == 0) {
             this.deleteProduct(articul)
         } else {
-            this.cartData[articul]['count']--
+            this.goods[articul]['count']--
         }
     }
     deleteProduct(articul) {
-        delete this.cartData[articul]
+        delete this.goods[articul]
     }
     getTotal() {
         let total = 0
-        for (let key in this.cartData) {
-            total += this.cartData[key].count * this.cartData[key].price
+        for (let key in this.goods) {
+            total += this.goods[key].count * this.goods[key].price
         }
         return total
     }
@@ -32,10 +32,10 @@ class Cart {
     renderCart() {
         const cartBody = document.createElement('div')
         cartBody.classList.add('cart__body')
-        for (const key in this.cartData) {
+        for (const key in this.goods) {
             const cartRow = document.createElement('div')
             cartRow.classList.add('cart__row')
-            let product = this.cartData[key]
+            let product = this.goods[key]
             const btnDel = document.createElement('button')
             btnDel.classList.add('cart__del-btn')
             btnDel.textContent = 'x'
@@ -69,6 +69,10 @@ class Cart {
         const cartTotal = document.createElement('div')
         cartTotal.classList.add('cart__total')
         cartTotal.textContent = `Сума замовлення: ${this.getTotal()} ${this.currency}`
+        if (this.getTotal() === 0) {
+            cartTotal.innerHTML = `<img class="cart-img" src="https://www.moyo.ua/new/img/shopping-cart.svg" alt="
+            Ваш кошик порожній">`
+        }
         cartBody.append(cartTotal)
         return cartBody
     }
